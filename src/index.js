@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './pages/demos/Life'; // 生命周期 demo
+import Admin from './admin';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Admin />, document.getElementById('root'));
