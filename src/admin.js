@@ -16,9 +16,11 @@ class Admin extends Component {
 					<NavLeft />
 				</Col>
 				<Col span={20} className="main">
-					<Header></Header>
-					<Row className="content">Content</Row>
-					<Footer></Footer>
+					<Header />
+					<Row className="content">
+						{this.props.children}
+					</Row>
+					<Footer />
 				</Col>
 			</Row>
 		);

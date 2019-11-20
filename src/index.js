@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Root from './router';
 
-import Admin from './admin';
-
-ReactDOM.render(<Admin />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
