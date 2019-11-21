@@ -6,7 +6,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="home-wrap">
-				home123
+				Welcome to my Home!
 			</div>
 		);
 	}
