@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ApiGet } from '../../api';
 import './index.less';
 
 class Home extends Component {
@@ -9,6 +10,15 @@ class Home extends Component {
 				Welcome to my Home!
 			</div>
 		);
+	}
+
+	componentDidMount() {
+
+		// ApiGet(`/type/index?currentPage=${1}&&groupType=${0}`).then(res => {
+		// 	console.log(res);
+		// }, err => {
+
+		// })
 	}
 }
 

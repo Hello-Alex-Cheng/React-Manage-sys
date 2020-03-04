@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { removeToken } from '../../utils/auth';
 import { Row, Col } from 'antd';
 import Utils from '../../utils';
 import './index.less';
@@ -6,7 +7,8 @@ import './index.less';
 class Header extends Component {
 	state = {
 		username: 'alex.cheng',
-		date: ''
+		date: '',
+		isLogin: true
 	}
 	componentDidMount() {
 		setInterval(() => {
@@ -17,13 +19,18 @@ class Header extends Component {
 		});
 	}
 
+	logout = () => {
+		removeToken();
+		window.location.reload()
+	}
+
 	render() {
 		return (
 			<div className="header">
 				<Row className="header-top">
 					<Col span={24}>
 						<span>欢迎，{this.state.username}</span>
-						<a href="#">退出</a>
+						<a onClick={this.logout}>退出</a>
 					</Col>
 				</Row>
 				<Row className="breadCrumb">

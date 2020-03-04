@@ -12,6 +12,7 @@ class Login extends Component {
 
 		form.validateFields((err, values) => {
 			if (!err) {
+				console.log(values);
 				message.success(`登录成功 ${userInfo.username}`);
 			} else {
 				message.error(`登录失败!`);

@@ -73,6 +73,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "服务器地址",
   "browserslist": {
     "production": [
       ">0.2%",

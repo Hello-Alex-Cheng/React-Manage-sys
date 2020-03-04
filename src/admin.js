@@ -8,7 +8,11 @@ import NavLeft from './components/NavLeft'
 import './style/common.less';
 
 class Admin extends Component {
-	state = {}
+	constructor(props) {
+		super(props);
+
+		this.state = {}
+	}
 	render() {
 		return (
 			<Row className="container">
@@ -16,7 +20,7 @@ class Admin extends Component {
 					<NavLeft />
 				</Col>
 				<Col span={20} className="main">
-					<Header />
+					<Header {...this.props} />
 					<Row className="content">
 						{this.props.children}
 					</Row>
